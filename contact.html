@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Space Arcade Chauny</title>
+<meta name="description" content="Contactez Space Arcade à Chauny : 4 Rue Aristide Briand, 02300 Chauny. Anniversaires, événements, privatisation — écrivez-nous.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" data-screen-label="Contact">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">▚</span>
+      <span><b>SPACE ARCADE</b><span class="sub">CHAUNY</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span class="status-pill" data-status-pill>
+        <span class="status-dot"></span><span class="status-label">—</span>
+      </span>
+      <button class="btn ghost" data-game-open style="font-size:10px;padding:11px 14px;">▶ JOUER</button>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ EN-TÊTE ============ -->
+<section class="section" style="padding:72px 0 36px;">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:0;">
+      <span class="eyebrow">▚ PLAYER SELECT · CONTACT</span>
+      <h2 class="section-title" style="font-size:clamp(26px,5vw,46px);">On vous attend de pied ferme</h2>
+      <p class="section-sub">Une question, une envie d'anniversaire ou de privatisation ? Écrivez-nous, on revient vers vous en deux temps trois mouvements.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT GRID ============ -->
+<section class="section" style="padding-top:8px;">
+  <div class="wrap">
+    <div class="grid-cards contact-layout">
+
+      <!-- Colonne infos -->
+      <div class="reveal">
+        <div class="card pink" style="padding:36px 34px;">
+          <span class="eyebrow pink">▚ NOUS JOINDRE</span>
+          <div style="margin-top:18px;">
+            <div class="info-row"><div class="k">📍</div><div class="v"><b>Adresse</b><span>4 Rue Aristide Briand<br>02300 Chauny</span></div></div>
+            <div class="info-row"><div class="k">✉️</div><div class="v"><b>E-mail</b><span><a href="mailto:spacearcadechauny@gmail.com" style="color:var(--cyan);">spacearcadechauny@gmail.com</a></span></div></div>
+            <div class="info-row"><div class="k">📞</div><div class="v"><b>Téléphone</b><span>Bientôt disponible</span></div></div>
+          </div>
+        </div>
+
+        <div class="card cyan" style="padding:30px 34px;margin-top:24px;">
+          <span class="eyebrow">▚ HORAIRES</span>
+          <table class="hours-table" style="margin-top:18px;">
+            <tr data-day="0"><td>Lun — Jeu</td><td>10h00 — 20h00</td></tr>
+            <tr data-day="4"><td>Ven — Sam</td><td>10h00 — 01h00</td></tr>
+            <tr data-day="6"><td>Dimanche</td><td>13h30 — 20h00</td></tr>
+          </table>
+        </div>
+
+        <div class="ph" style="min-height:200px;margin-top:24px;">
+          <div class="lbl"><div class="frame-ic">🗺️</div>PLAN À VENIR<small>4 Rue Aristide Briand, 02300 Chauny</small></div>
+        </div>
+
+        <div class="socials" style="margin-top:24px;">
+          <a href="#" class="social fb">FACEBOOK</a>
+          <a href="#" class="social ig">INSTAGRAM</a>
+        </div>
+      </div>
+
+      <!-- Colonne formulaire -->
+      <div class="reveal d1">
+        <div style="position:relative;">
+          <form class="form-card" data-contact-form novalidate>
+            <span class="eyebrow" style="margin-bottom:8px;">▚ ENVOYER UN MESSAGE</span>
+            <p style="color:var(--muted);font-size:14px;margin:10px 0 26px;">Anniversaire, EVG/EVJF, tournoi, privatisation, team building… dites-nous tout.</p>
+
+            <div class="field">
+              <label for="f-nom">Votre nom</label>
+              <input type="text" id="f-nom" name="nom" placeholder="Ex : Alex Martin" autocomplete="name">
+              <span class="err">Indiquez votre nom, merci !</span>
+            </div>
+
+            <div class="field">
+              <label for="f-email">E-mail</label>
+              <input type="email" id="f-email" name="email" placeholder="vous@exemple.fr" autocomplete="email">
+              <span class="err">Adresse e-mail invalide.</span>
+            </div>
+
+            <div class="field">
+              <label for="f-sujet">Votre demande</label>
+              <select id="f-sujet" name="sujet">
+                <option>Anniversaire</option>
+                <option>EVG / EVJF</option>
+                <option>Tournoi gaming</option>
+                <option>Soirée à thème</option>
+                <option>Privatisation</option>
+                <option>Team building</option>
+                <option>Autre question</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-message">Votre message</label>
+              <textarea id="f-message" name="message" placeholder="Date envisagée, nombre de personnes, vos envies…"></textarea>
+              <span class="err">Quelques mots de plus nous aideront (10 caractères min.).</span>
+            </div>
+
+            <button type="submit" class="btn pink" style="width:100%;justify-content:center;">▸ ENVOYER</button>
+            <p style="color:var(--muted-2);font-size:12px;margin:16px 0 0;text-align:center;">Pas de réservation en ligne pour le moment : ce message nous parvient par e-mail.</p>
+          </form>
+
+          <div class="form-success">
+            ★ MESSAGE ENVOYÉ ★<br><br>
+            <span style="font-size:11px;color:var(--ink);">Merci ! On vous répond très vite.<br>GAME ON 🎮</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:16px;">
+          <span class="mark">▚</span>
+          <span><b>SPACE ARCADE</b><span class="sub">CHAUNY</span></span>
+        </a>
+        <p>La salle de jeux rétro-futuriste de Chauny. Jouez, trinquez, fêtez — appuyez sur START.</p>
+        <div class="socials" style="margin-top:18px;">
+          <a href="#" class="social fb">FACEBOOK</a>
+          <a href="#" class="social ig">INSTAGRAM</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="galerie.html">Galerie photos</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#anniversaires">Anniversaires</a>
+      </div>
+      <div>
+        <h4>Infos</h4>
+        <p>4 Rue Aristide Briand<br>02300 Chauny</p>
+        <a href="mailto:spacearcadechauny@gmail.com">spacearcadechauny@gmail.com</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 SPACE ARCADE · CHAUNY &nbsp;—&nbsp; <span>GAME OVER ? INSERT COIN.</span></div>
+  </div>
+</footer>
+
+<button class="coin-btn" data-game-open>● INSERT COIN</button>
+
+<div class="game-overlay" data-game>
+  <div class="game-cabinet">
+    <div class="game-top">
+      <b>▚ SPACE DEFENDER</b>
+      <button class="game-close" aria-label="Fermer">×</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div class="game-foot">
+      <span class="hint">← → bouger · ESPACE tirer · ÉCHAP fermer</span>
+      <span class="score" data-score>SCORE 0</span>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
